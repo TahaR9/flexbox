@@ -1,0 +1,88 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+    /* display: flex;
+    background-color: aliceblue;
+    justify-content:space-between;
+    align-items: flex-end;
+    height: 500px; */
+    
+    /* display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    On Main axis 
+    justify-content:end;
+    On Cross axis 
+    align-items: center;
+    height: 500px;  */
+    
+    /* display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+    height: 500px;
+    align-items: end; */
+
+    /* display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    height: 500px;
+    justify-content: start;
+    align-items: flex-end; */
+    
+    
+    background-color: aqua;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-container::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.item {
+    flex: 1 0 100px; /* Grow Shrink Basis or just flex: 1 */
+    /* width: 100px; */
+    /* flex-basis: 100px; */
+    /* flex-grow: 1; */
+    height: 100px;
+    background: rgb(95, 72, 240);
+    margin: 10px;
+    color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Pseduo Selector */
+
+/* .item:nth-of-type(1) { */
+    /* align-self: start; */
+    /* order: 2; */
+    /* flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 200px; */
+/* }  */
+/* .item:nth-of-type(2) { */
+    /* align-self: center; */
+    /* flex-basis: 200px; */
+    /* flex-grow: 2; */
+/* } */
+/* .item:nth-of-type(3) { */
+    /* align-self: end; */
+    /* flex-grow: 1; */
+/* } */
